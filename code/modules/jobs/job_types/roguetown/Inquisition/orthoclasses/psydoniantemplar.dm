@@ -1,6 +1,6 @@
 /datum/advclass/psydoniantemplar // A templar, but for the Inquisition
 	name = "Adjudicator"
-	tutorial = "Ten knights, clad in fluted chainmaille and blessed with the capacity to invoke lesser miracles. In lieu of greater miracles and rituals, they compensate through martial discipline and blessed weaponry."
+	tutorial = "Ten's knights, clad in fluted chainmaille and blessed with the capacity to invoke lesser miracles. In lieu of greater miracles and rituals, they compensate through martial discipline and blessed weaponry."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/psydoniantemplar
@@ -50,7 +50,7 @@
 		ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_INQUISITION, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)		//You're a foreigner, a guest of the realm.
-		H.grant_language(/datum/language/otavan)
+		H.grant_language(/datum/language/grenzelhoftian)
 
 		H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
